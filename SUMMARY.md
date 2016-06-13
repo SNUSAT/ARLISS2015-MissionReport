@@ -5,7 +5,7 @@
 * [Mechanical Structural System](arl15d1001md.md)
    * [Body Structure](body_structure.md)
    * [Wheel Structure](wheel_structure.md)
-   * Stabilizer Structure
+   * [Stabilizer Structure](stabilizer_structure.md)
 * Electrical Control System
    * Electrical Power System
    * Vision System

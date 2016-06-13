@@ -7,7 +7,7 @@
    * [Wheel Structure](wheel_structure.md)
    * [Stabilizer Structure](stabilizer_structure.md)
 * Electrical Control System
-   * Electrical Power System
+   * [Electrical Power System](electrical_power_system.md)
    * Vision System
 * Software System
    * Communication System

@@ -32,22 +32,27 @@ Finally we completed our concept design by deciding to make variable-diameter wh
 ## 4. Detail design
 ### 4.1 Previous designs
 To satisfy upper concept design factors, we suggested three versions of variable-diameter wheel. Each version was named by ver.1.0, ver.1.2, ver.2.0. Each suggestion’s property, strength and weakness is like that below.
- 	 
+![](10032.png) 	 
 After stretching
-Diameter : 323.24mm	Before stretching
+Diameter : 323.24mm
+![](10033.png)
+Before stretching
 Diameter : 140.00mm
 
 Picture 1. Wheel design Ver.1.0
-
- 	 
+ 	 ![](10034.png)
 After stretching
-Diameter : 211.00mm	Before stretching
+Diameter : 211.00mm	
+![](10035.png)
+Before stretching
 Diameter : 121.00mm
 
 Picture 2. Wheel design Ver.1.2
- 	 
+ 	 ![](10036.png)
 After stretching
-Diameter : 220.00mm	Before stretching
+Diameter : 220.00mm
+![](10037.png)
+Before stretching
 Diameter : 130.00mm
 
 Picture 3. Wheel design Ver.2.0
@@ -56,7 +61,7 @@ Table 1. Strength/Weakness Analysis of each wheel design
 | Type	| Strength |	Weakness |
 | -- | -- | -- |
 | Ver.1.0 |	Spoke doesn’t disturb maintaining form of capsule. / It has many spokes so is stable. / After stretching, diameter is big | Weak durability. Weight is the biggest Spoke can disturb satellite’s body so they can have interference./ After stretching, we don’t know how to fix the spokes./ Before stretching, it also have big diameter.| 
-| Ver.1.2 |	Strong durability. Before stretching, it has small diameter so we have spare space.| Difficult to make one-body wheel. Spare to decrease the weight is little. Difficult to control spring’s elastic modulus. We have little confidence of spring’s effect. After stretching, we don’t know how to fix the spokes.| 
+| Ver.1.2 |	Strong durability. Before stretching, it has small diameter so we have spare space.| Difficult to make one-body wheel. Spare to decrease the weight is little. Difficult to control spring’s elastic modulus. We have little confidence of spring’s effect. After stretching, we don’t know how to fix the spokes.| ![](10031.jpg)
 | Ver.2.0 |	The lightest weight. Easy to make one-body wheel. Easy to control spring’s elastic modulus. Hexagon shape is easier to make it than circular shape.|	It has little spare to decrease the weight. We have little confidence of spring’s effect. After stretching, we don’t know how to fix the spokes.| 
 
 We experimented those three version of wheel. If we use the lightest material, ABS, one-side wheel is more than 100g so each wheel take 10% of the whole weight of satellite. Furthermore, every version of wheel has to control its variability by spring so we can’t be convinced. Those designs are uneconomical, inefficient, non-perfect design. Finally we simplified our problem by having elasticity naturally and reducing its weight as possible as we can. In conclusion, wheel body is decided to make from sponge and spoke is decided to make from iron made tapeline.

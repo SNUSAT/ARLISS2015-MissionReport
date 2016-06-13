@@ -29,6 +29,7 @@
 ---
 ### 3.1 System requirements
 |System Req.Num.	|System Requirement |
+| -- | -- |
 |SNUSAT-STR-01	|The whole cansat’s weight must be lower than 1050g.
 |SNUSAT-STR-02	|The whole cansat should be smaller than Φ146mm, H 240mm including a parachute.
 |SNUSAT-STR-03	|The cansat cannot push a wall of a rocket.
@@ -56,6 +57,40 @@ A Tap hole is the female portion of the mating pair (e.g. a nut) which has screw
 ### 3.4 Reducing weights and fillets
  As all cansats for ARLISS have to be weighted under 1050g, we should design the satellite as light as possible. The satellite’s weight can be easily reduced by cutting off some portion of structural frames. We successfully decreased weight of the cansat up to 109g by removing relatively useless portions of the aluminum structures; the force flow is relatively low in the relatively useless portions. Moreover, we processed fillet at every corner of cut portion to preserve strength as much as possible.
 
+
+4. Detail design
+4.1 Assembly view
+ ![](10021.png)
+Figure 1 Front view
+ ![](10022.png)
+Figure 2 Rear view
+
+![](10025.png)![](10023.jpg)
+Figure 3 Drawing for Body structure
+
+4.2 Design drawing
+ ![](10024.png)
+Figure 4 Drawing for Body 1
+ ![](100251.png)
+Figure 5 Drawing for Body 2
+ ![](10026.png)
+Figure 6 Drawing for Side
+ ![](10027.png)
+Figure 7 Drawing for System stack cover
+
+  
+		5. Results
+5.1 Environmental test
+We dropped the satellite from about 20m height with the parachute and the capsule to test whether the structure frame can protect internal electric systems successfully. In result, even though the capsule teared a little bit, the whole system got no damage.
+
+5.2 Launch
+Our cansat fell free from 4km above and crashed the ground. Consequently, the power line of the satellite was destroyed by shock of impact. The body structures are bent about 30 degree. We concluded the reason of free-fall is destruction of capsule. The problem was the capsule was too weak to withstand shock inflicted by parachute deployment on flight.
+ ![](10028.jpg)
+ ![](10029.jpg)
+ ![](100210.jpg)
+Figure 8 after impact 
+		6. Reference
+6.1 
 
 
 

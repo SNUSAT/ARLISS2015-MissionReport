@@ -1,4 +1,9 @@
 # Stabilizer Structure
+## 1. Change log
+
+| ISS/REV |	Date |	Modifications |	Created/modified by |
+| 1/0 |	11/17/2015 |	First issue |	Jungjae Park pjj1115@mensakorea.org|
+			
 
 
 ## 2. Design focus 

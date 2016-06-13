@@ -3,7 +3,7 @@
 * [Abstract](README.md)
 * [Mission Design](arl15md.md)
 * [Mechanical Structural System](arl15d1001md.md)
-   * Body Structure
+   * [Body Structure](body_structure.md)
    * Wheel Structure
    * Stabilizer Structure
 * Electrical Control System

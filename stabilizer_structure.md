@@ -23,6 +23,7 @@
  
  
 ##	3. Concept design
+---
 ### 3.1 Foldable Mechanism
 - Size of the satellite should be 146mm or less, thus the stabilizer is able to be folded up when not in use.
 
@@ -34,28 +35,31 @@
 
  
 ##	4. Detail design
+---
 ### 4.1 Assembly view
+ ![](10061.jpg)
     
+
 Figure 1 Stabilizer
 
  
 ## 5. Manufacture
 ---
 ###5.1 Components
- 
+ ![](제목없음1.png)
 Figure 2 Plastic plate (100mm x 45mm) and T-shaped steel hinge (48mm x 47mm x 15mm)
 - T-shaped steel hinge is purchased in the internet site (www.moongori.com)
-5.2 Assembling Process
+###5.2 Assembling Process
 ①	Prepare two components; Plastic plate and T-shaped steel hinge
 ②	Cut the T-shaped steel hinge like the shape in the picture below
- 
+ ![](제목없음2.png)
 Figure 3 Worked T-shaped steel hinge
 
 ③	Attach the plastic plate on the worked hinge
- 
+ ![](제목 없음3.png)
 Figure 4 Stabilizer
 ④	Attach the part of STEP3(this is stabilizer) on the assembled body part
-   
+ ![](10061.jpg)
 Figure 5 Assembled satellite with stabilizer
 
 ## 6. Results

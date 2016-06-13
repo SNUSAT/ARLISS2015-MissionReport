@@ -2,8 +2,7 @@
 
 * [Abstract](README.md)
 * [Mission Design](arl15md.md)
-* Mechanical Structural System
-   * [Mechanical Structural System](arl15d1001md.md)
+* [Mechanical Structural System](arl15d1001md.md)
    * Body Structure
    * Wheel Structure
    * Stabilizer Structure

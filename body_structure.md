@@ -28,24 +28,24 @@
 ## 3. Concept design
 ---
 ### 3.1 System requirements
-System Req. Num.	System Requirement
-SNUSAT-STR-01	The whole cansat’s weight must be lower than 1050g.
-SNUSAT-STR-02	The whole cansat should be smaller than Φ146mm, H 240mm including a parachute.
-SNUSAT-STR-03	The cansat cannot push a wall of a rocket.
-SNUSAT-STR-04	The cansat structure must tolerate at least 500g shock.
-SNUSAT-STR-05	The parachute must be deployed at least in 2 seconds after deployment from the rocket.
-SNUSAT-STR-06	The cansat can cross over at least 15mm obstacles.
-SNUSAT-STR-07	The vision angle of cameras should be at least vertically 60 degree and horizontally 90 degree.
-SNUSAT-STR-08	The cansat can tolerate vibration of 15g, 30~2000Hz at least 1 minute.
-SNUSAT-STR-09	The parachute can relieve the impact shock from 4km fall lower than 500g.
-SNUSAT-STR-10	GPS, IMU, Communication system should work normally when they’re completely set up.
-SNUSAT-STR-11	No interference between wheels and the body structure when the satellite drives.
-SNUSAT-STR-12	The satellite should maintain stable condition resisting external interference in forward/backward movement.
-SNUSAT-STR-13	The satellite should maintain stable condition in acceleration and brake.
-SNUSAT-STR-14	The cameras have to face at horizon in ±10 degree.
-SNUSAT-STR-15	The parachute have to be decoupled from the body in 5 seconds after landing.
-SNUSAT-STR-16	Every part should be assembled without mechanical interference
-SNUSAT-STR-16	The Structure system should withstand over 100 ℃
+|System Req.Num.	|System Requirement |
+|SNUSAT-STR-01	|The whole cansat’s weight must be lower than 1050g.
+|SNUSAT-STR-02	|The whole cansat should be smaller than Φ146mm, H 240mm including a parachute.
+|SNUSAT-STR-03	|The cansat cannot push a wall of a rocket.
+|SNUSAT-STR-04	|The cansat structure must tolerate at least 500g shock.
+|SNUSAT-STR-05	|The parachute must be deployed at least in 2 seconds after deployment from the rocket.
+|SNUSAT-STR-06	|The cansat can cross over at least 15mm obstacles.
+|SNUSAT-STR-07	|The vision angle of cameras should be at least vertically 60 degree and horizontally 90 degree.
+|SNUSAT-STR-08	|The cansat can tolerate vibration of 15g, 30~2000Hz at least 1 minute.
+|SNUSAT-STR-09	|The parachute can relieve the impact shock from 4km fall lower than 500g.
+|SNUSAT-STR-10	|GPS, IMU, Communication system should work normally when they’re completely set up.
+|SNUSAT-STR-11	|No interference between wheels and the body structure when the satellite drives.
+|SNUSAT-STR-12	|The satellite should maintain stable condition resisting external interference in forward/backward movement.
+|SNUSAT-STR-13	|The satellite should maintain stable condition in acceleration and brake.
+|SNUSAT-STR-14	|The cameras have to face at horizon in ±10 degree.
+|SNUSAT-STR-15	|The parachute have to be decoupled from the body in 5 seconds after landing.
+|SNUSAT-STR-16	|Every part should be assembled without mechanical interference
+|SNUSAT-STR-16	|The Structure system should withstand over 100 ℃
 
 ### 3.2 Octangular frame
 The ARLISS Cansat regulation asks the size of the satellite to be smaller than Φ146*240mm cylinder.  We have designed the body structure as a square pillar shape at first. However, for the maximum space efficiency, we invented an octagular body frame cutting off four edge of the square. This design increased internal space of the satellite without an increase in total diameter. 

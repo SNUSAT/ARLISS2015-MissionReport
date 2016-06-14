@@ -11,7 +11,7 @@
    * [Vision System](vision_system.md)
 * [Software System](software_system.md)
    * [Communication System](communication_system.md)
-   * Naviation System
+   * [Naviation System](naviation_system.md)
    * Log Software
    * Operation Software
    * Software System Code Manual

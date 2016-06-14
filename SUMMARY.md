@@ -9,7 +9,7 @@
 * Electrical Control System
    * [Electrical Power System](electrical_power_system.md)
    * [Vision System](vision_system.md)
-* Software System
+* [Software System](software_system.md)
    * [Communication System](communication_system.md)
    * Naviation System
    * Log Software

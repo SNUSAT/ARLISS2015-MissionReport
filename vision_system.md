@@ -17,15 +17,15 @@ First, to collect vision data satellite sets its status to capture mode. In capt
 After collecting data, vision processing executed with withdrawal of satellite. Processing step is divided in image processing and data processing. Image processing purposes manufacturing raw image to vivid image. In fact, it gives analyzable image. Data processing uses the result of image processing. It is coordinate analysis process to get 3D object. So data processing is core process of vision system.
 3D-Rendering is displaying step of result that obtained by data processing. So rendering can be like interpreting unreadable data to readable data. In this step 3d-coordinate is expressed with little sphere.  Due to poor sample data and hard analyze of sample, rendering can’t express the detail shape. But the object can be showed in simple shape. 
 
-3.Detail Design
+## 3.Detail Design
 Vision system is main system for payload mission. The system can be focused on software side and hardware side.
 
-	Software
+### 3.1 Software
 The software of vision system is made up of C++ and open libraries. The below table is library used for each function.
-Function	Library	Company
-Collecting vision data	OpenCV	Intel
-Data Processing	SURF	University of British Columbia
-3D-Rendering	OpenGL	Silicon Graphics
+| Function |	Library	| Company |
+| Collecting vision data |	OpenCV	| Intel |
+| Data Processing |	SURF |	University of British Columbia |
+| 3D-Rendering |	OpenGL |	Silicon Graphics |
 
 Main system design is focused on SURF algorithm analysis. For 3D – Object Mapping vision system’s purpose, analyzing given 2D image data is most important. Therefore the algorithm is conjugated with principle of payload mission.
 When setting a frame along the two axis of the 2D image, we can get 2D coordinate value of each pixel of image data. However when two image are available for same scene at different point of sight, two 2D coordinate value of same object can be obtained. So if these two frames are being integrated, 3D frame can be made by optic lobes. SURF Algorithm has main role in this step.
@@ -39,23 +39,23 @@ Acquisition of depth value(z-value) transforms 2D coordinate to 3D. As a result,
  
 Figure 1. result of keypoints by SURF
 
-	Collecting Vision Data
+### 3.1.1 Collecting Vision Data
 Algorithm for collecting vision data is executed when system software commands that the satellite entered to mission mode. This step is done with OpenCV Library in payload software.
 
-	Processing
+### 3.1.2	Processing
 Processing step is made up of SURF Algorithm. The algorithm runs with the two image input by CAM. Each image data is given as coordinate form. So SURF Algorithm takes keypoints in image data and transforms it to 2D coordinate. After it ends each keypoint goes through steps that calculate depth data which means Z coordinate value. Then in new image data as coordinate form, there exist all X, Y, Z coordinate value. This step is done with OpenCV and SURF Algorithm in ground station.
 
-	3D - Rendering
+### 3.1.3	3D - Rendering
 3D – Rendering displays processed data in 3D axis with mini sphere. Each keypoints are displayed in pre-calculated coordinate system with spheres so the object can be seen in 3D. In the coordinate system monitoring sight can be changed by user interface. Accordingly 3D object can be seen in all directions. This step is done with OpenGL in ground station.
 
-3.2 Hardware
+### 3.2 Hardware
 The hardware of vision system is made up of CAM, MCU and Camera Mount. CAM collects data, MCU makes CAM work and saves data, Camera Mount holds CAM. Design of hardware is focused on collecting accurate vision data. The reason of focusing accurate vision data is unstable outside environment. So obtaining vivid and workable data is really hard. Therefore, combination of Mount with CAM and the angle of CAM are designed proper for environment that satellite would blunder into. Also due to probability for fine data quantity of pictures are set on maximum.
 CAM is connected on MCU with USB so the power problem doesn’t need to be considered. Also because of convenient connection 
 
  
 Figure 2. combined CAM on satellite
 
-4.Production
+## 4.Production
 	OpenCV
 Version : v.2.4.10
 Used for : CAM control, SURF

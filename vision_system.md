@@ -23,6 +23,7 @@ Vision system is main system for payload mission. The system can be focused on s
 ### 3.1 Software
 The software of vision system is made up of C++ and open libraries. The below table is library used for each function.
 | Function |	Library	| Company |
+| -- | -- | -- |
 | Collecting vision data |	OpenCV	| Intel |
 | Data Processing |	SURF |	University of British Columbia |
 | 3D-Rendering |	OpenGL |	Silicon Graphics |

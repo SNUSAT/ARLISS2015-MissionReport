@@ -10,7 +10,7 @@
    * [Electrical Power System](electrical_power_system.md)
    * [Vision System](vision_system.md)
 * Software System
-   * Communication System
+   * [Communication System](communication_system.md)
    * Naviation System
    * Log Software
    * Operation Software

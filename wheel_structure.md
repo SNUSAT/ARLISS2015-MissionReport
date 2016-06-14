@@ -61,13 +61,13 @@ Table 1. Strength/Weakness Analysis of each wheel design
 | Type	| Strength |	Weakness |
 | -- | -- | -- |
 | Ver.1.0 |	Spoke doesn’t disturb maintaining form of capsule. / It has many spokes so is stable. / After stretching, diameter is big | Weak durability. Weight is the biggest Spoke can disturb satellite’s body so they can have interference./ After stretching, we don’t know how to fix the spokes./ Before stretching, it also have big diameter.| 
-| Ver.1.2 |	Strong durability. Before stretching, it has small diameter so we have spare space.| Difficult to make one-body wheel. Spare to decrease the weight is little. Difficult to control spring’s elastic modulus. We have little confidence of spring’s effect. After stretching, we don’t know how to fix the spokes.| ![](10031.jpg)
+| Ver.1.2 |	Strong durability. Before stretching, it has small diameter so we have spare space.| Difficult to make one-body wheel. Spare to decrease the weight is little. Difficult to control spring’s elastic modulus. We have little confidence of spring’s effect. After stretching, we don’t know how to fix the spokes.| 
 | Ver.2.0 |	The lightest weight. Easy to make one-body wheel. Easy to control spring’s elastic modulus. Hexagon shape is easier to make it than circular shape.|	It has little spare to decrease the weight. We have little confidence of spring’s effect. After stretching, we don’t know how to fix the spokes.| 
 
 We experimented those three version of wheel. If we use the lightest material, ABS, one-side wheel is more than 100g so each wheel take 10% of the whole weight of satellite. Furthermore, every version of wheel has to control its variability by spring so we can’t be convinced. Those designs are uneconomical, inefficient, non-perfect design. Finally we simplified our problem by having elasticity naturally and reducing its weight as possible as we can. In conclusion, wheel body is decided to make from sponge and spoke is decided to make from iron made tapeline.
 
 ### 4.2 Final design
- 
+ ![](10031.jpg)
 Picture 6. Final Design of Wheel
 Final design of wheel uses 32 parts of tapeline spoke. Double tapeline spoke is put in one space and it has opposite direction. Tapeline spoke is put at outer side of wheel because if it close to robot’s body, one of body and spoke will be broken. 
 

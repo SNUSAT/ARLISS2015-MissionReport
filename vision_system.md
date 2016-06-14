@@ -36,7 +36,7 @@ B∶distance between two lense of CAM,f∶focal length)
 Equation 1. calculating depth value1)
 
 Acquisition of depth value(z-value) transforms 2D coordinate to 3D. As a result, each points can be displayed in 3D space.
- 
+ ![](20052.png)
 Figure 1. result of keypoints by SURF
 
 ### 3.1.1 Collecting Vision Data
@@ -52,44 +52,55 @@ Processing step is made up of SURF Algorithm. The algorithm runs with the two im
 The hardware of vision system is made up of CAM, MCU and Camera Mount. CAM collects data, MCU makes CAM work and saves data, Camera Mount holds CAM. Design of hardware is focused on collecting accurate vision data. The reason of focusing accurate vision data is unstable outside environment. So obtaining vivid and workable data is really hard. Therefore, combination of Mount with CAM and the angle of CAM are designed proper for environment that satellite would blunder into. Also due to probability for fine data quantity of pictures are set on maximum.
 CAM is connected on MCU with USB so the power problem doesn’t need to be considered. Also because of convenient connection 
 
- 
+ ![](ar15.jpg)
 Figure 2. combined CAM on satellite
 
 ## 4.Production
-	OpenCV
+- OpenCV
+
+
 Version : v.2.4.10
 Used for : CAM control, SURF
 
 
 
-	SURF
+- SURF
+
+
 Implemented in OpenCV v.2.4.10 as additional library.
 
-	OpenGL
+- OpenGL
+
+
 Version : 4.5(latest)
 Used for : Displaying method
 
 
-	Source Code
+- Source Code
+
+
 https://github.com/HanByulKim/SNUSAT_ARLISS2015_Vision
 
-	Collected Data
-   
-
-	SURF Result
+- Collected Data
+   ![](20053.jpg)
+![](20054.jpg)
+- SURF Result
  
 
-	Rendering Result
+- Rendering Result
  
 
-5.Trouble Shooting
+## 5.Trouble Shooting
 	.dll problem
 Because of patent problem in SURF algorithm, to use SURF in OpenCV, additional libraries and version check are needed. When searching and downloading missing .dll files and headers on proper path it can be cleared.
 
-	image quality problem
+- image quality problem
+
 As said in above, bad image can’t be processed properly in Processing step. Keypoints could not discovered in bad image due to mathematical problems for orthogonal vectors. As a result bad image gets a few keypoints and shows strange shape in 3D coordinate system. So by taking data as many as possible and discarding bad data, selection of good image can be done and the problem gets solved.
 
-	For advanced version
+- For advanced version
+
+
 The latest version of vision software can display the simple shape approximately but cannot shows exactly and has hardship for complicated object. So for advanced version in this software canny function will be applied. Canny gives the border of the object so that the algorithm can recognize it exactly.
 Statistic method will be applied also. When canny divides the district of inner and outer of object statistic analyze can be made based on border.
 The above two methods should give high 3D object display quality for next advanced version.

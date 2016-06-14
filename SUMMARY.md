@@ -8,7 +8,7 @@
    * [Stabilizer Structure](stabilizer_structure.md)
 * Electrical Control System
    * [Electrical Power System](electrical_power_system.md)
-   * Vision System
+   * [Vision System](vision_system.md)
 * Software System
    * Communication System
    * Naviation System

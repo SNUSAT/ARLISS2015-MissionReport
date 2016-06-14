@@ -30,10 +30,8 @@ The software of vision system is made up of C++ and open libraries. The below ta
 Main system design is focused on SURF algorithm analysis. For 3D – Object Mapping vision system’s purpose, analyzing given 2D image data is most important. Therefore the algorithm is conjugated with principle of payload mission.
 When setting a frame along the two axis of the 2D image, we can get 2D coordinate value of each pixel of image data. However when two image are available for same scene at different point of sight, two 2D coordinate value of same object can be obtained. So if these two frames are being integrated, 3D frame can be made by optic lobes. SURF Algorithm has main role in this step.
 Surf Algorithm gets keypoint for each 2D image and sets basement for integrating each two frames of images. On software algorithm gets identical point in each 2D image with user set critical point for accuracy. When using below equation with each two points, we can get z-axis value for 3D frame.
-Z=Bf/(X_L-X_R )
-(X:x value at each frame,Z:z value in 3D frame,
-B∶distance between two lense of CAM,f∶focal length)
-Equation 1. calculating depth value1)
+
+![](20055.png)
 
 Acquisition of depth value(z-value) transforms 2D coordinate to 3D. As a result, each points can be displayed in 3D space.
  ![](20052.png)

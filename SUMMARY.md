@@ -12,7 +12,7 @@
 * [Software System](software_system.md)
    * [Communication System](communication_system.md)
    * [Naviation System](naviation_system.md)
-   * Log Software
+   * [Log Software](log_software.md)
    * Operation Software
    * Software System Code Manual
 

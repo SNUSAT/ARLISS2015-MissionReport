@@ -14,5 +14,5 @@
    * [Naviation System](naviation_system.md)
    * [Log Software](log_software.md)
    * [Operation Software](operation_software.md)
-   * Software System Code Manual
+   * [Software System Code Manual](software_system_code_manual.md)
 

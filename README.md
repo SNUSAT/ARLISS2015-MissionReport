@@ -1,4 +1,4 @@
-# -> ARLISS 2015 Mission Report <-
+# ARLISS 2015 Mission Report
 
 
 ![](ar15.jpg) 
@@ -7,4 +7,4 @@
 ![](naver.png)
 ![](snusat.png)
 
-This file file serves as your book's preface, a great place to describe your book's content and ideas.
+

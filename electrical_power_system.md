@@ -7,12 +7,14 @@ For EPS, it is important to consider the following specs of batteries and parts.
 2.	Max Current
 3.	Discharge Rate
 4.	Capacity
-2.Concept Design
-2.1 Schematic
+
+# 2.Concept Design
+## 2.1 Schematic
  
+ ![](20041.png)
 Figure 1. Overall Schematic
 The above diagram is v.3.0 schematic for all system. The concept cannot be understandable without other systems because EPS should consider all the details specs of parts. Only the small EPS Board diagram is for EPS system.  The overall systems can be divided to 2 Stacks, System Stack and Actuator Stack.
- 
+![](20042.png) 
 Figure 2. EPS diagram
 First, System Stack is main system deal with MCU consist of main sensors, IMU, GPS, Transceiver, Camera. Mainstream communications and operations are processed on these systems so they don’t require much voltage but proper capacity. System stack uses 7.4V battery and uses LDO regulators convert to 5V and 3.3V.
 Second, Actuator Stack is driving system, literally with motors. As the system holds all body and drives it, it requires large current and capacity. Actuator Stack uses huge 14.8V battery directly to motor driver.
@@ -24,9 +26,9 @@ There are keypoint focuses in each of design steps. You can see the minimalized 
 In Electrical System battery seems like a pump in canal system. As the pump in canal makes the force that water can flow, battery also makes the current. So the battery let all the circuits worked. However the problem is if there are many loads in circuit system, the pump should be overloaded. So we should select proper batteries for system. 
 There are 4 points that we consider for selecting batteries. Voltage, Max Current, Discharge Rate, Capacity. The reason we considered these is so many parts and the torque of motor. In our satellite we selected 14.8V for motors and 7.4V for other systems. This step is proceeded with checking parts of other system due to the analysis of specification. The focalizing of specification is needed because the parts influence the process most.
 
- 
+ ![](20043.png)
 Figure 3. Turnigy nano-tech 300mah 2S 35~70C Lipo Pack(7.4V Battery)
- 
+ ![](200414.png)
 Figure 4. ZIPPY Compact 1300mAh 4s 40c Lipo Pack(14.8V Battery)
 
 1.	Voltage
@@ -57,7 +59,7 @@ The capacitation of battery is important for satellite’s duration, literally. 
 
 ### 3.2 Consisting Deployment System
 Deployment System is main switch for overall system. In the point of automatic operation at high altitude, Deployment System cannot work all physically. So using MOSFET is necessary. There are 2 types of control for Deployment System with MOSFET SW. One is Vcc and the other is GND. Because of the stability with copper pour, Vcc control is applied in our satellite.
- 
+ ![](20045.png)
 Figure 5. P, N type MOSFET
 Vcc control uses P-type MOSFET(IRF4905) due to the action between Source and Drain.(IRF4905 is proper since it has Drain Current for 49A(?). It isn’t less than the current consumption.) So the Jump-Socket will located at upside and connected with Vcc. And pull-down resistor(1k Ω) locates on the other side. The socket acts like pull-up resistor that can change value. It has 0Ω when it’s on pin and ∞Ω when offed. So the each of serial voltage would be 0V and Vcc. Also pull-down resistor’s serial voltage would be Vcc and 0V each. Eventually the MOSFET will turned off when the socket is on pin and turned on when removed.
 P-type MOSFET is used to control Vcc and N-type MOSFET is used to control GND. So when designing analogic electrical SW what source you should handle is important. Usually P-type MOSFET is more preferred as GND is used as common source.
@@ -74,10 +76,10 @@ Webcam(CAM)	5V	0.27A
 
 Transformation System only supplies to parts with Navigation Board, MCU and CAM. What we have to focus on is the rated voltage and current consumption  of each parts. The above table is that kind of details of MCU, CAM and parts in Navigation Board.
 By setting marginal voltage percent as 10%, We can bound MCU, IMU, CAM for 5V ±10% and GPS, Wi-Fi for 3.3V ±10%. So we can choose 5V & 3.3V LDO. The below picture is main datasheet description of MC7805CT(5V LDO) and KIA78R33API(3.3V LDO).
- 
+ ![](20046.png)
 Figure 6. MC78xx series description
 
- 
+ ![](20047.png)
 Figure 7. KIA78Rxx series description
 But for the current consumption, output current of LDO should be considered. So two 5V LDO will be used. One for MCU & CAM and the other for IMU so that MCU and other parts operate simultaneously. Generally the sub parts uses the VCC of MCU. But for the stability of power, other parts use independent LDO except CAM. CAM uses MCU’s VCC due to USB connection.
 Also attaching capacitors at input and output is necessary. Because on/off action can affect circuits with sudden increment or decrement of current, it can make linked circuits been harmed. So proper capacitors are needed for each LDOs. The datasheet for each parts offer proper capacity of capacitors.
@@ -96,7 +98,7 @@ Total	24.647		27.1117
 
 When it comes to each part with small amount of current, special consideration isn’t needed. Usually small connection uses a little current so it can be covered. But it is important when they become integrated and get bigger and bigger.
 
- 
+ ![](20048.png)
 Figure 8. EPS diagram
 ‘①’ is each regulator’s output lines. First 5V regulator has MCU and supplies 2.2A. Also second regulator has IMU and supplies about 0.06A. 3.3V regulator has GPS and Wi-Fi module and gives about 0.4A. Each value should be considered for each output line width. Also 3A and 1A fuse is attached to each output line due to safety of latter systems.
 ‘②’ is input lines of each regulators and has one signal input for Heat system. As the regulator has output current sum for 2.66A with margin, we can consider this value as integrated current. Signal for Heat System can be ignored.
@@ -106,29 +108,30 @@ Figure 8. EPS diagram
 ### 3.5 Connectors
 Since the other systems work in other board(not in EPS board) transmitting power to other systems is needed. It is done with connectors for direct connection between EPS and other system that power is needed.
 Consideration of connectors is similar with drawing lines in amount of current. (We already handled about rated line currents in above ①, ③.) Additionally it considers vibration of satellite and tension for connectors. So vibration test is demanded. But the lack of test environment we use heuristic method. Usually molex connectors are used for small rated current, and terminal block for huge rated current. So we use molex for ①, terminal block for ③, 7.4V battery and 14.8V battery. The below picture is used molex and terminal blocks for EPS.
-     
+     ![](20049.png)![](200410.png) ![](200411.png)
 Figure 9, 10, 11. 5P Molex, 25A Terminal Block, 70A Terminal Block
 
-4.Production
+## 4.Production
 
 -	EPS Board
- 
+ ![](200412.jpg)
 Figure 12. EPS PCB Board
 
 -	EPS for competition
- 
+ ![](200413.jpg)
 Figure 13. EPS
 
 5.Results
 - Arliss Power Budget
-Category	Part	Max Power(mW)	Num	Margin(%)	Total Power(mW)
-MCU	Odroid U3	10000	1	10	11000
-COMM.	ESP8266	709.5	1	30	922.35
-CAM	WebCAM	No spec	2		No spec
-GPS	AKS6H	82.5	1	10	90.7
-IMU	myAHRS+	260	1	10	286
-Motor	NTM Prop Drive Series 28-30A 800kV	222000	2	30	577200
-Total Power(mW)	589499
+| Category	| Part |	Max Power(mW) |	Num	Margin(%) |	Total Power(mW) |
+| -- | -- | -- | -- | -- |
+|MCU |	Odroid U3 |	10000 |	1	| 10 |	11000 |
+| COMM. |	ESP8266 |	709.5 |	1 |	30 |	922.35 |
+| CAM |	WebCAM |	No spec	2 |		No spec |
+|GPS |	AKS6H |	82.5 |	1	| 10 |	90.7 |
+| IMU |	myAHRS+	| 260 | 	1	 |10 |	286 |
+| Motor |	NTM Prop Drive Series 28-30A 800kV	| 222000 |	2 |	30 |	577200 |
+|Total Power(mW)| | | |	589499|
 
 
 ## 6.Trouble Shooting

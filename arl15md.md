@@ -1,5 +1,7 @@
 # Mission Design
-
+![](engineering.jpg)
+![](naver.png)
+![](snusat.png)
 ## Motivation 
  In a movie <Iron man 3>, many high-technologies developed by Tony Stark are described. The most amazing invention is, we think, ‘JAVIS’ the AI computer. JAVIS, Tony Stark’s computer assistant, often seems much more powerful than human brain. Our team members interested in one of its function and especially paid attention to a scene below.
  ![](arl1501.png)

@@ -40,7 +40,7 @@
 <IMU system overview>
 ※Please refer to ARL15-D-30-07-Software System_code manual(part IMU.hm IMU.cpp)
 
-
+![](30031.png)
 ####4.1.1 Using I2C
 - We use <wire.h> header, basic header in Arduino IDE, for I2C. We edit IMU I2C example code as what we need. 
 - So please refer the example code(https://github.com/withrobot/myAHRS_plus/tree/master/tutorial).  
@@ -52,13 +52,13 @@
  ###4.2 MAX.h, MAX.cpp
 <GPS system overview>
 ※Please refer to ARL15-D-30-07-Software System_code manual(part MAX.h, MAX.cpp)
-
+![](30032.png)
 ####4.2.1 Using I2C
 - We refer to Register Map of MAX-6Q  to get data. By using <Wire.h>, we can implement the register map in Arduino IDE.  First, get ready the register. Second, read the register and check if there are some data. If not reset itself. Third, read the register.
 ####4.2.2 Self error check
 - As pointed out above, it can check if the register have data or not. If not, it resets itself until it gets data ordinary.
 ####4.2.3 Get every data
- 
+ ![](30034.png)
 -  After read register, the data presents as NMEA(The National Marine Electronics Association). ‘renew()’ gets GPS data from NMEA. Many functions are in ‘renew()’. The NMEA data has latitude, longitude, and height data sequentially. So ‘getPhrase()’ separates each data. And ‘spellCheck ()’ checks the form of data. If the form is wrong, MCU regards it as error and operates ‘renew()’ function again. ‘Stof()’ change string type data to double. And ‘getLat()’, ‘getLng()’, and ‘getHgt()’ functions represent latitude, longitude, and height in double type.
 
 ##	5. Manufacture
@@ -67,7 +67,7 @@
 ## 6. Results
 ---
 ### 6.1 Data
- 
+ ![](30035.png)
 - We get GPS, and IMU data completely. (The location is building 39, Seoul National University, Korea)
 
  
